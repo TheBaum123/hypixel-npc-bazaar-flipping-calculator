@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="body-wrapper">
+        <header>
+            <select name="sort-by" id="sort-by" class="header-button">
+                <option value="profit" class="sort-by-option" id="sort-by-profit">Sort by: Profit</option>
+                <option value="name" class="sort-by-option" id="sort-by-name">Name</option>
+                <option value="cost" class="sort-by-option" id="sort-by-cost">Cost</option>
+                <option value="sellPrice" class="sort-by-option" id="sort-by-sellPrice">Sell Price</option>
+            </select>
+            <h1>Npc-Bazaar flipping recommendations</h1>
+            <button class="header-button" onclick="load()">reload</button>
+        </header>
+        <main>
+            <div id="cards-wrapper">
+                <h1>loading...</h1>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <script defer src="scripts/index.main.js"></script>
+    <script defer src="scripts/index.json.js"></script>
+</body>
+</html>
